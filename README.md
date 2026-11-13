@@ -6,7 +6,7 @@ Aplicación de curso para consultar la última ejecución pública del flujo de 
 
 Requiere Node.js 22.12 o superior. Ejecutar `npm install` y `npm run dev`; abrir la dirección que muestra Vite. Para generar la versión compilada: `npm run build`; para revisarla: `npm run preview`.
 
-La URL pública de la API se configura con `VITE_API_URL` en un archivo `.env` opcional; se incluye `.env.example`. Los valores VITE se incluyen en el navegador: nunca colocar secretos allí. GitHub limita peticiones anónimas y puede devolver errores o información no disponible.
+La URL pública de la API se configura con `VITE_API_URL` en un archivo `.env` opcional; se incluye `.env.example` vacío. Si no se define, se usa `https://api.github.com`. Los valores VITE se incluyen en el navegador: nunca colocar secretos allí. GitHub limita peticiones anónimas y puede devolver errores o información no disponible.
 
 ## Diseño y evolución
 
@@ -14,4 +14,5 @@ La URL pública de la API se configura con `VITE_API_URL` en un archivo `.env` o
 
 ## Estado y evidencia
 
-Curso: Del prototipo a producción, Coderhouse. El proyecto es una implementación nueva inspirada en una necesidad de continuidad; no constituye una refactorización del tablero existente. Verificaciones y publicación se documentarán cuando ocurran.
+Curso: Del prototipo a producción, Coderhouse. El proyecto es una implementación nueva inspirada en una necesidad de continuidad; no constituye una refactorización del tablero existente. Se probó la compilación y en navegador una consulta exitosa y un error HTTP 404. No se probó el estado vacío ni el despliegue del monitor.
+
