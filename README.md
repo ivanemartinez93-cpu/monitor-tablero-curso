@@ -2,6 +2,8 @@
 
 Aplicación de curso para consultar la última ejecución pública del flujo de actualización del tablero de continuidad. No accede a ClickUp, no requiere credenciales y no modifica tareas. Una ejecución exitosa no demuestra por sí sola que los datos publicados estén actualizados.
 
+Monitor publicado: https://ivanemartinez93-cpu.github.io/monitor-tablero-curso/
+
 ## Ejecutar
 
 Requiere Node.js 22.12 o superior. Ejecutar `npm install` y `npm run dev`; abrir la dirección que muestra Vite. Para generar la versión compilada: `npm run build`; para revisarla: `npm run preview`.
@@ -14,5 +16,5 @@ La URL pública de la API se configura con `VITE_API_URL` en un archivo `.env` o
 
 ## Estado y evidencia
 
-Curso: Del prototipo a producción, Coderhouse. El proyecto es una implementación nueva inspirada en una necesidad de continuidad; no constituye una refactorización del tablero existente. Se probó la compilación y en navegador una consulta exitosa y un error HTTP 404. No se probó el estado vacío ni el despliegue del monitor.
+Curso: Del prototipo a producción, Coderhouse. El proyecto es una implementación nueva inspirada en una necesidad de continuidad; no constituye una refactorización del tablero existente. Se probó la compilación, una consulta exitosa y un error HTTP 404 en local, y una consulta exitosa en la página publicada. No se probó el estado vacío.
 
